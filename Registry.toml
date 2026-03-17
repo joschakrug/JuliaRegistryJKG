@@ -4,3 +4,4 @@ repo = "git@github.com:joschakrug/LocalJuliaRepo.git"
 
 [packages]
 15489a28-470a-4c47-be98-4174d0f03947 = { name = "GriddedFunctions", path = "G/GriddedFunctions" }
+31c4d4ac-5a00-4604-9840-19cb78338d47 = { name = "ValueFunctions", path = "V/ValueFunctions" }
