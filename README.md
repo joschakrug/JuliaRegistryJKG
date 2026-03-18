@@ -1,13 +1,13 @@
 # Personal local Julia registry
 
-This project is a lightweight Julia registry for personal and third-party Git-hosted Julia packages. I use it to ensure replicability and consistent versioning between interdependent packages that are not ready to be uploaded to Julia's General registry yet. It is managed using the [LocalRegistry.jl](https://github.com/GunnarFarneback/LocalRegistry.jl) package.
+This repository is a lightweight Julia registry for personal and third-party Git-hosted Julia packages. I use it to ensure replicability and consistent versioning between interdependent packages that are not ready to be submitted to Julia's General registry yet. It is managed using the [LocalRegistry.jl](https://github.com/GunnarFarneback/LocalRegistry.jl) package.
 
 ## Adding this registry to your local machine
 
 To add this registry to your local machine -- e.g. because you are working with one of my packages that depends on a package in this registry -- you simply need to run
 
 ```julia
-julia> Pkg.Registry.add(RegistrySpec(url="git@github.com:joschakrug/LocalJuliaRepo.git"))
+julia> Pkg.Registry.add(RegistrySpec(url="git@github.com:joschakrug/JuliaRegistryJKG.git"))
 ```
 
 once in your local Julia REPL. From this moment on, you will be able to `] add` or `] update` any packages listed in it just as you would be able to add an official Julia package.
@@ -20,5 +20,5 @@ Then, to **either add or update** a package, make sure that you have pushed a ve
 
 ```julia
 julia> using LocalRegistry
-julia> register("path/to/NewPackageRepo", registry = "LocalJuliaRepo", push = true)
+julia> register("path/to/NewPackageRepo", registry = "JuliaRegistryJKG", push = true)
 ```
