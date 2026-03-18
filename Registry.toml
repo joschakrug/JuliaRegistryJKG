@@ -1,6 +1,6 @@
-name = "LocalJuliaRepo"
+name = "JuliaRegistryJKG"
 uuid = "c5a0c350-42d6-4cea-90f3-86d29b2553fb"
-repo = "git@github.com:joschakrug/LocalJuliaRepo.git"
+repo = "git@github.com:joschakrug/JuliaRegistryJKG.git"
 
 [packages]
 15489a28-470a-4c47-be98-4174d0f03947 = { name = "GriddedFunctions", path = "G/GriddedFunctions" }
